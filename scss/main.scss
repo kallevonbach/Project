@@ -1,0 +1,10 @@
+@import "reset";
+@import "scss/vendor/scss/font-awesome";
+@import "modules";
+@import "header";
+@import "content";
+@import "vendor/bootstrap.min";
+
+a{
+    text-decoration: none;
+}

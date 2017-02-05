@@ -1,0 +1,90 @@
+header{
+    max-width: $containerw;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+header a, i{
+    color: $greyf;
+    text-decoration: none;
+}
+header a:hover{
+    color: $orange;
+}
+header i{
+    padding-right: 5px; 
+}
+header li{
+    display: inline;
+}
+
+//topbar with logo, contact and shopcart 
+.topbar{
+    height: 85px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-family: arial;
+    border-bottom: solid 1px #c7c7c7;
+}
+.con-shop li{
+    padding-right: 20px;
+}
+.con-shop li:last-child{
+    padding: 10px 20px;
+    background-color: #ededed;
+}
+span{
+    padding-left: 15px; 
+}
+//main navigation
+.main{
+    font-family: $primFont;
+    font-size: 18px;
+    margin-top: 12px;
+}
+.main li{
+    margin-right: 60px;
+}
+.main li:last-child{
+    float: right;
+    margin-right: 0;
+    font-size: 14px;
+}
+
+//dropdown for the navbar
+.dropdown-content {
+    margin-top: 2px;
+    display: none;
+    position: absolute;
+    background-color: #999999;
+    min-width: 170px;
+    z-index: 2;
+}
+
+.dropdown-content a {
+    font-family: Arial;
+    font-size: 16px;
+    color: white;
+    padding: 5px 0 0 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:first-child{
+    padding-top: 30px;
+}
+.dropdown-content a:last-child{
+    padding-bottom: 30px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+//the bottom border
+.bottom-border{
+    height: 2px;
+    border-top: 7px solid $orange;
+    border-bottom: 2px solid $orange;
+    margin-top: 15px;
+}

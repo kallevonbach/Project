@@ -5,12 +5,17 @@
 	width: $containerw;
 	max-width: 100%;
 	margin: 90px auto 0 auto;
+	
+	@media screen and (max-width: $small) {
+		width: 100%;
+		margin: 15px 0 0 0;
+		
+	}
 }
 .p-cat {
 	width: 370px;
 
 		h2{
-		padding: 12px 0;
 		font: 23px $primFont;
 			a{
 			color: $orange;
@@ -25,7 +30,20 @@
 		line-height: 20px;
 		color: $greyf;
 		}
-	
+	@media screen and (max-width: $small) {
+		max-width: 32%;
+		img{
+			max-width: 100%;
+		}
+		h2{
+			font-size: 12px;
+			margin: 4px 0;
+		}
+		p{
+			font-size: 10px;
+			line-height: 15px;
+		}
+	}
 }
 
 
@@ -55,15 +73,18 @@
 .container{
 	margin: 50px auto;
 	width: 1200px;
-		@media screen and (max-width: 600px) {
-		margin-bottom: 20px;
-		width: 100%;
+		@media screen and (max-width: $small) {
+			margin-bottom: 20px;
+			width: 100%;
 		}
 }
 
 .product{
 	padding: 0 15px;
 	margin-bottom: 30px;
+		@media screen and (max-width: $small) {
+			padding: 0 7.5px;
+		}
 }
 .prod-border{
 	border: 1px solid #eeeeee;
@@ -81,6 +102,9 @@
 	margin: 0;
 	padding: 0 20px;
 	border-top: 1px solid #eeeeee;
+	@media screen and (max-width: $small) {
+		padding: 0 5px;
+	}
 }
 .prod-desc{
 	color: $greyh;
@@ -97,6 +121,18 @@
 	p{
 		font-size: 12px;
 		font: $secFont;
+	}
+	@media screen and (max-width: $small) {
+		h3{
+			font-size: 14px;
+		}
+		h4{
+			font-size: 12px;
+			margin-bottom: 2px;
+		}
+		p{
+			font-size: 10px;
+		}
 	}
 }
 .price-icons{
@@ -117,10 +153,24 @@
 			color: $orange;
 		}
 	}
+	@media screen and (max-width: $small) {
+		padding: 7.5px 0 25px 0;
+		p{
+			font-size: 12px;
+		}
+		i{
+			font-size: 14px;
+		}
+	}
 }
 .buy-grid{
       @extend .buttonM;
       font-size: 14px;
 	  width: 100%;
 	  padding: 10px 0;
+	@media screen and (max-width: $small) {
+		margin: 0px;
+		font-size: 12px;
+		padding: 7.5px 0;
+	}
 }

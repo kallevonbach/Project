@@ -3,17 +3,34 @@
     z-index: 0;
     font-family: $primFont;
     margin-top: -7px;
+
     h1{
         font-size: 59px;
+        @media screen and (max-width: $small) {
+		    font-size: 16px;
+            margin-bottom: 0px;
+		}
     }
     p{
         font-size: 14px;
+        @media screen and (max-width: $small) {
+		    font-size: 8px;
+            margin: 4px 0 0 0;
+		}
     }
     img{
         max-height: 650px;
     }
     button{
-        @extend .buttonM
+        @extend .buttonM;
+        padding: 8px 14px;
+        font-size: 14px;
+        margin-top: 10px;
+        @media screen and (max-width: $small) {
+		    padding: 4px 7px;
+            font-size: 8px;
+            margin-top: 5px; 
+		}
     }
 }
 
@@ -24,13 +41,20 @@
     transform: translate(0%, -60%);
 	max-width: 50%;
 
+    @media screen and (max-width: $small) {
+        transform: translate(0%, -80%);
+        max-width: 70%;
+		}
+
 
 	.sy-caption {
 		border-radius: 0;
 		left: 0;
 		padding: 20px 50px 20px 100px;
 		background-color: rgba(black, 0.6);
-
+        @media screen and (max-width: $small) {
+		    padding: 5px 5px 10px 10px;
+		}
 	}
 }
 
@@ -53,6 +77,13 @@
 		a {
             background-color: white;
 		}
+	}
+    @media screen and (max-width: $small) {
+		top: -35px;
+        li{
+            width: 0.7em;
+            height: 0.7em;
+        }
 	}
 }
 

@@ -5,7 +5,6 @@ header{
 }
 header a, i{
     color: $greyf;
-    text-decoration: none;
 }
 header a:hover{
     color: $orange;
@@ -42,6 +41,19 @@ span{
     font-family: $primFont;
     font-size: 18px;
     margin-top: 12px;
+    
+    
+    input {
+     border:none;
+     background-color: $white;
+        &:active, &:hover, &:focus{
+        border:1px solid $orange;
+        box-shadow:0 0 3px $orange;
+        -moz-box-shadow:0 0 3px $orange;
+        -webkit-box-shadow:0 0 3px $orange;
+     }
+     }
+     
 }
 .main li{
     margin-right: 60px;
@@ -59,7 +71,7 @@ span{
     position: absolute;
     background-color: #999999;
     min-width: 170px;
-    z-index: 2;
+    z-index: 100;
 }
 
 .dropdown-content a {
@@ -83,7 +95,9 @@ span{
 
 //the bottom border
 .bottom-border{
-    height: 2px;
+    position: relative;
+    z-index: 20;
+    height: 10px;
     border-top: 7px solid $orange;
     border-bottom: 2px solid $orange;
     margin-top: 15px;

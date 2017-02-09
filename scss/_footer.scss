@@ -1,0 +1,123 @@
+.newsletter{
+    background-color: $orange;
+    width: 100%;
+}
+.signupcon{
+    width: $containerw;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2{
+        color:white;
+        font-size: 22px;
+    }
+    form{
+        input[type="email"]{
+            border: 0;
+            padding: 10px 30px 10px 10px;
+            font-size: 14px;
+            font-family: $secFont;
+            margin-right: 20px;
+            text-transform: uppercase;
+        }
+        input[type="submit"]{
+            @extend .buttonM;
+            background-color: #ff674f;
+            font-size: 14px;
+            padding: 10px 15px;
+        }
+    }
+    @media screen and (max-width:$small) {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 150px;
+    h2{
+        font-size: 16px;
+        margin-bottom: 10px; 
+    }
+    }
+}
+
+footer{
+    background-color: #2a2d34;
+    padding: 25px;
+}
+
+.footer-con{
+    width: $containerw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    h2{
+        color: white;
+        font-size: 22px;
+    }
+    li, a, p{
+        color: $greyf;
+        font-family: $secFont;
+    }
+    @media screen and (max-width:$small) {
+        flex-direction: column;
+        max-width: 100%;
+  }
+}
+
+.ourstores{
+    p{
+        margin-top: 20px; 
+        font-size: 14px;
+    }
+    ul{
+        margin-top: 20px;
+    }
+}
+.social li{
+display: inline-block;
+    i{
+        color: white;
+        margin-right: 20px;
+        &:hover{
+            color: #ef4035;
+        }
+    }
+}
+.blogpost{
+    max-width: 300px;
+    li{
+    line-height: 20px;
+    margin-top: 20px;
+    }
+    h4{
+        font-size: 14px;
+        color:white;
+        text-transform: none;
+        margin-bottom: 5px;
+    }
+    a:hover{
+        text-decoration: underline;
+        h4{
+            text-decoration: underline;
+            color: white;
+        }
+    }
+}
+
+.support {
+    ul{
+    float: left;
+    margin: 15px 75px 0 0;
+    }
+    a:hover{
+        color: $orange;
+    }
+}
+.right{
+    float: right;
+        @media screen and (max-width:$small) {
+        float: none;
+  }
+}

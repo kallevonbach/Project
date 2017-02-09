@@ -1,15 +1,3 @@
-.slider-con{
-	margin-top: -7px;
-	width: 100%; 
-	height: 650px;
-	position: relative;
-	z-index: -1;
-}
-.slider-con img{
-	width: 100%;
-	height: 650px;
-}
-
 //product categories
 .p-cat-con{
 	display: flex;
@@ -20,65 +8,119 @@
 }
 .p-cat {
 	width: 370px;
+
+		h2{
+		padding: 12px 0;
+		font: 23px $primFont;
+			a{
+			color: $orange;
+				&:hover{
+				text-decoration: underline;
+				}
+			}
+		}
+		p{
+		font-family: $secFont;
+		font-size: 14px;
+		line-height: 20px;
+		color: $greyf;
+		}
+	
 }
-.p-cat h2{
-	padding: 12px 0;
-	font: 23px $primFont;
-	text-transform: uppercase;
-}
-.p-cat h2 a{
-	color: $orange;
-}
-.p-cat h2 a:hover{
-	text-decoration: underline;
-}
-.p-cat p{
-	font-family: $secFont;
-	font-size: 14px;
-	line-height: 20px;
-	color: $greyf;
-}
+
 
 //products heading
 .popular-prod{
-	width: $containerw;
-	margin: 50px auto 0 auto;
-}
-//find anden løsning
-h2 {
-  font: 23px $primFont;
-  color: #67686d;
-  text-transform: uppercase;
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  line-height: 0;
-  padding: 0;
+	margin-top: 50px;
+	//find anden løsning
+	h2 {
+	font: 23px $primFont;
+	color: $greyh;
+	text-transform: uppercase;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+	line-height: 0;
+	padding: 0;
+	}
+
+	h2 span {
+		background: #fff;
+		padding: 0 15px;
+		margin: 0 250px;
+	}
 }
 
-h2 span {
-    background: #fff;
-    padding: 0 15px;
-	margin: 0 250px;
-}
 
 //products
-.col-md-3{
+.container{
+	margin: 50px auto;
+	width: 1200px;
+		@media screen and (max-width: 600px) {
+		margin-bottom: 20px;
+		width: 100%;
+		}
+}
+
+.product{
+	padding: 0 15px;
+	margin-bottom: 30px;
+}
+.prod-border{
 	border: 1px solid #eeeeee;
-	width: 268px;
 }
 .prod-img{
-	border-bottom: 1px solid #eeeeee;
-	padding-top: 5px;
-	height: 258px;
+	padding: 5px 10px;
+	i{
+	color:$orange;
+	}
+	img, i{
+		max-width: 100%;
+	}
 }
-
-.prod-img i{
-	color: $orange;
+.desc-con{
+	margin: 0;
+	padding: 0 20px;
+	border-top: 1px solid #eeeeee;
 }
 .prod-desc{
-	padding: 20px;
-	height: 168px;
-	//border-left: 1px solid #eeeeee;
-	//border-right:  1px solid #eeeeee; 
-
+	color: $greyh;
+	h3{
+		font-size: 18px;
+		font: $primFont;
+		margin-bottom: 2px;
+	}
+	h4{
+		font-size: 14px;
+		font: $primFont;
+		margin: 0;
+	}
+	p{
+		font-size: 12px;
+		font: $secFont;
+	}
+}
+.price-icons{
+	border-top: 1px solid #eeeeee;
+	padding: 10px 0 30px 0;
+	p{
+		float: left;
+		color: $orange;
+		font: $secFont;
+		font-size: 14px;
+	}
+	i{
+		margin-left: 8px;
+		float: right;
+		color: $greyh;
+		font-size: 16px;
+		&:hover{
+			color: $orange;
+		}
+	}
+}
+.buy-grid{
+      @extend .buttonM;
+      font-size: 14px;
+	  width: 100%;
+	  padding: 10px 0;
 }

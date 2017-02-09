@@ -2,9 +2,38 @@
 //colors
 $orange: #f45a40;
 $greyf: #7e7f84;
+$greyh: #67686d;
+$white: #ffffff;
 
 
 $containerw: 1170px;
+$small: 1000px;
 
 $primFont: 'PT Sans', sans-serif;
 $secFont: Arial, Helvetica, sans-serif;
+
+.buttonM{
+    font-family: $secFont;
+    color: $white;
+    background-color: $orange;
+    text-transform: uppercase;
+    text-align: center;
+    border: 0px;
+}
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active
+{
+    outline: 0px;
+    -webkit-appearance:none;
+}

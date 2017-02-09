@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <title>Miniproject</title>
     <link rel="stylesheet" href="/css/main.css">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/slippry.min.js"></script>
 </head>
 <body>
 <header>
     <div class="topbar">
-        <img src="img/logo.png" alt="company logo">
+        <a href="index.html"><img src="img/logo.png" alt="company logo"></a>
         <ul class="con-shop">
             <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+45 22660077">+45 22660077</a></li>
             <li><i class="fa fa-envelope-o" aria-hidden="true"></i><a href="mailto:hello@ipsum.com">hello@ipsum.com</a></li>
@@ -41,8 +44,30 @@
 </header>
 <div class="bottom-border">
 </div>
-<div class="slider-con">
-    <img src="img/slider.jpg" alt="slider image">
+<div class="slide-con">
+<ul id="slider">
+  <li>
+    <a href="#slide1"><img src="/img/slider1.jpg" alt="<h1>RIGHT IS PINK.<br>
+LEFT IS BLUE</h1><p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch<br>
+playmakers, these kicks are ready to stand out.</p><button>shop brasil</button>"></a>
+  </li>
+  <li>
+    <a href="#slide2"><img src="/img/slide2.jpg"  alt="<h1>Swin like a pro</h1>
+    <p>Nulla at enim non dolor aliquet placerat eu eu nibh.<br> Mauris finibus velit vitae molestie lobortis.</p><button>shop swimming</button>"></a>
+  </li>
+  <li>
+    <a href="#slide3"><img src="/img/slide3.jpg" alt="<h1>score goals like Zlatan</h1>
+    <p>Nulla at enim non dolor aliquet placerat eu eu nibh. Mauris finibus velit vitae molestie lobortis.<br>Maecenas et orci euismod nibh blandit auctor. Integer hendrerit cursus nisl, vitae tristique ex.</p><button>shop football</button>"></a>
+  </li>
+  <li>
+    <a href="#slide4"><img src="/img/slide4.jpg"  alt="<h1>Play like Woods</h1>
+    <p>Nulla at enim non dolor aliquet placerat eu eu nibh.<br> Mauris finibus velit vitae molestie lobortis.</p><button>shop golf</button>"></a>
+  </li>
+  <li>
+    <a href="#slide5"><img src="/img/slide5.jpg" alt="<h1>challenge yourself</h1>
+    <p>Nulla at enim non dolor aliquet placerat eu eu nibh.<br> Mauris finibus velit vitae molestie lobortis.</p><button>shop winter</button>"></a>
+  </li>
+</ul>
 </div>
 <nav class="p-cat-con">
     <div class="p-cat football">
@@ -64,21 +89,287 @@ vivamus congue nulla leo, quis imperdiet magna.</p>
 vivamus congue nulla leo, quis imperdiet magna.</p>
     </div>
 </nav>
+<!--products-->
 <section class="popular-prod">
     <h2><span>popular products</span></h2>
-    <div class="row">
-        <div class="col-lg-3 col-md-3">
-            <div class="prod-img">
-                <p class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
-                <img src="img/product.jpg" alt="product image">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-md-3 product">
+                <div class="inner">
+                <div class="prod-border">
+                        <div class="prod-img">
+                        <p class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <img src="img/product.jpg" alt="product image">
+                        </div>
+                    <div class="desc-con">
+                        <div class="prod-desc">
+                            <h3>Gel-Fujitrabuco 5 G-Tx</h3>
+                            <h4>Running Shoe</h4>
+                            <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+                        </div>
+                        <div class="price-icons">
+                            <p>$ 86.99</p>
+                            <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-grid">buy now</button>
+                </div>
             </div>
-            <div class="prod-desc">
-                <h3>Gel-Fujitrabuco 5 G-Tx</h3>
-                <h4>Running Shoe</h4>
-                <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+            <div class="col-xs-6 col-md-3 product">
+                <div class="inner">
+                <div class="prod-border">
+                        <div class="prod-img">
+                        <p class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <img src="img/product.jpg" alt="product image">
+                        </div>
+                    <div class="desc-con">
+                        <div class="prod-desc">
+                            <h3>Gel-Fujitrabuco 5 G-Tx</h3>
+                            <h4>Running Shoe</h4>
+                            <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+                        </div>
+                        <div class="price-icons">
+                            <p>$ 86.99</p>
+                            <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-grid">buy now</button>
+                </div>
+            </div>            
+            <div class="col-xs-6 col-md-3 product">
+                <div class="inner">
+                <div class="prod-border">
+                        <div class="prod-img">
+                        <p class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <img src="img/product.jpg" alt="product image">
+                        </div>
+                    <div class="desc-con">
+                        <div class="prod-desc">
+                            <h3>Gel-Fujitrabuco 5 G-Tx</h3>
+                            <h4>Running Shoe</h4>
+                            <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+                        </div>
+                        <div class="price-icons">
+                            <p>$ 86.99</p>
+                            <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-grid">buy now</button>
+                </div>
+            </div>            
+            <div class="col-xs-6 col-md-3 product">
+                <div class="inner">
+                <div class="prod-border">
+                        <div class="prod-img">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <img src="img/product.jpg" alt="product image">
+                        </div>
+                    <div class="desc-con">
+                        <div class="prod-desc">
+                            <h3>Gel-Fujitrabuco 5 G-Tx</h3>
+                            <h4>Running Shoe</h4>
+                            <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+                        </div>
+                        <div class="price-icons">
+                            <p>$ 86.99</p>
+                            <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-grid">buy now</button>
+                </div>
+            </div>                       
+        </div>
+                <div class="row">
+            <div class="col-xs-6 col-md-3 product">
+                <div class="inner">
+                <div class="prod-border">
+                        <div class="prod-img">
+                        <p class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <img src="img/product.jpg" alt="product image">
+                        </div>
+                    <div class="desc-con">
+                        <div class="prod-desc">
+                            <h3>Gel-Fujitrabuco 5 G-Tx</h3>
+                            <h4>Running Shoe</h4>
+                            <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+                        </div>
+                        <div class="price-icons">
+                            <p>$ 86.99</p>
+                            <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-grid">buy now</button>
+                </div>
+            </div>
+            <div class="col-xs-6 col-md-3 product">
+                <div class="inner">
+                <div class="prod-border">
+                        <div class="prod-img">
+                        <p class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <img src="img/product.jpg" alt="product image">
+                        </div>
+                    <div class="desc-con">
+                        <div class="prod-desc">
+                            <h3>Gel-Fujitrabuco 5 G-Tx</h3>
+                            <h4>Running Shoe</h4>
+                            <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+                        </div>
+                        <div class="price-icons">
+                            <p>$ 86.99</p>
+                            <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-grid">buy now</button>
+                </div>
+            </div>            
+            <div class="col-xs-6 col-md-3 product">
+                <div class="inner">
+                <div class="prod-border">
+                        <div class="prod-img">
+                        <p class="stars"><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <img src="img/product.jpg" alt="product image">
+                        </div>
+                    <div class="desc-con">
+                        <div class="prod-desc">
+                            <h3>Gel-Fujitrabuco 5 G-Tx</h3>
+                            <h4>Running Shoe</h4>
+                            <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+                        </div>
+                        <div class="price-icons">
+                            <p>$ 86.99</p>
+                            <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-grid">buy now</button>
+                </div>
+            </div>            
+            <div class="col-xs-6 col-md-3 product">
+                <div class="inner">
+                <div class="prod-border">
+                        <div class="prod-img">
+                        <p><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i><i class="fa fa-star" aria-hidden="true"></i></p>
+                        <img src="img/product.jpg" alt="product image">
+                        </div>
+                    <div class="desc-con">
+                        <div class="prod-desc">
+                            <h3>Gel-Fujitrabuco 5 G-Tx</h3>
+                            <h4>Running Shoe</h4>
+                            <p>God og robust terrænløbesko med GORE-TEX-membran. Overdel i let mesh og sål med affjedring både i hæl og forfod....</p>
+                        </div>
+                        <div class="price-icons">
+                            <p>$ 86.99</p>
+                            <a href="#"><i class="fa fa-plus-circle" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <button class="buy-grid">buy now</button>
+                </div>
+            </div>                       
+        </div>
+    </div>   
+</section>
+<!--footer-->
+<div class="newsletter">
+    <div class="signupcon">
+    <h2>Sign up for exclusive sales and product news</h2>
+    <form action="">
+        <input type="email" placeholder="Lorem@ipsum.com">
+        <input type="submit" value="sign up">
+    </form>
+    </div>
+</div>
+<footer>
+    <div class="footer-con">
+        <div class="ourstores">
+            <h2>Our Stores</h2>
+            <p>Feel free to visit our stores or contact us.</p>
+        <ul>
+            <li>Vinegade 109</li>
+            <li>5000 Odense</li>
+            <li>99886622</li>
+        </ul>
+        <ul>
+            <li>Vestergade 910</li>
+            <li>9000 Aalborg</li>
+            <li>96819191</li>
+        </ul>
+        <ul class="social">
+            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
+            <li><a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a></li>
+        </ul>
+        </div>
+        <div class="blogpost">
+            <h2>Blog Posts</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h4>Lorem ipsum hey</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Donec sed auctor elit.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h4>New sexy sport clothes are here!</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Donec sed auctor elit.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h4>Summer sales are coming!</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Donec sed auctor elit.</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="support">
+            <h2>Support</h2>
+            <ul>
+                <li><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Payment</a></li>
+                <li><a href="#">Refunds</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Privacy &amp; Security</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Press</a></li>
+                <li><a href="#">Corporate Information</a></li>
+            </ul>
+            <div class="right">
+            <ul>
+                <li><a href="#">Sizing</a></li>
+                <li><a href="#">Ordering</a></li>
+                <li><a href="#">Shipping</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Find A Store</a></li>
+                <li><a href="#">Site Map</a></li>
+                <li><a href="#">Sign Up &amp; Save</a></li>
+            </ul>
             </div>
         </div>
-    </div>    
-</section>
+    </div>
+</footer>
 </body>
 </html>

@@ -1,10 +1,16 @@
 @import "reset";
 @import "scss/vendor/scss/font-awesome";
+@import "vendor/bootstrap.min";
+@import "vendor/slippry";
 @import "modules";
 @import "header";
+@import "slider";
 @import "content";
-@import "vendor/bootstrap.min";
+@import "footer";
 
-a{
-    text-decoration: none;
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: uppercase;
+    font-family: $primFont; 
 }
+

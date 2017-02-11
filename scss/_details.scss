@@ -1,0 +1,36 @@
+.details-con{
+    width: $containerw;
+    margin: 30px auto;
+}
+.gallery-con{
+    width: 570px;
+    height: 760px;
+}
+.productimg{
+    height: 570px;
+    text-align: center;
+    border: 1px solid #c7c7c7;
+}
+.thumbs{
+    margin-top: 15px; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.product-1{
+    margin: auto 0;
+    width: 175px;
+    height: 175px;
+    border: 1px solid #c7c7c7;
+    text-align: center;
+    padding-top: 50px;
+}
+.product-2{
+    @extend .product-1;
+    border: 1px solid $orange;
+    padding-top: 0;
+}
+.product-3{
+    @extend .product-1;
+    padding-top: 20px;
+}

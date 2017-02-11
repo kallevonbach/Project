@@ -32,7 +32,7 @@
         }
     }
     
-    @media screen and (max-width:$small) {
+    @include small {
         justify-content: center;
         flex-direction: column;
         width: 100%;
@@ -56,7 +56,7 @@
 //footer with nav
 footer{
     background-color: #2a2d34;
-    padding: 25px;
+    padding: 15px;
 }
 
 .footer-con{
@@ -73,7 +73,7 @@ footer{
         color: $greyf;
         font-family: $secFont;
     }
-    @media screen and (max-width:$small) {
+    @include small {
         flex-direction: column;
         max-width: 100%;
   }
@@ -132,7 +132,7 @@ display: inline-block;
 }
 .right{
     float: right;
-        @media screen and (max-width:$small) {
+        @include small {
         float: none;
   }
 }

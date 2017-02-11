@@ -19,6 +19,27 @@ $secFont: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
     text-align: center;
     border: 0px;
+    transition: color 0.5s;
+    -webkit-transition: color 0.5s;
+    &:hover{
+      color: #2a2d34;
+    }
+}
+.searchM{
+    border:none;
+    background-color: $white;
+
+    &:active, &:hover, &:focus{
+        border: 0.5px solid $orange;
+        box-shadow:0 0 1px $orange;
+        -moz-box-shadow:0 0 1px $orange;
+        -webkit-box-shadow:0 0 1px $orange;
+    }
+}
+@mixin small {
+  @media only screen and (max-width: 1000px) {
+    @content;
+  }
 }
 
 textarea:hover, 

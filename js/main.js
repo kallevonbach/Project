@@ -14,4 +14,6 @@ jQuery(document).ready(function(){
             $(this).addClass("open");
         }
     });
+    $('#tab-container').easytabs();
+
 });

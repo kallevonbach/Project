@@ -5,6 +5,8 @@
     <title>Miniproject</title>
     <link rel="stylesheet" href="/css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="/js/jquery.easytabs.min.js"></script>
+<script src="/js/jquery.hashchange.min.js"></script>
 <script src="/js/slippry.min.js"></script>
 <script src="/js/main.js"></script>
 </head>
@@ -52,27 +54,83 @@
 </header>
 <div class="bottom-border">
 </div>
-<div class="details-con">
+
+<!--details page starts here-->
+<section class="details-con">
       <div class="gallery-con">  
         <div class="productimg">
-            <img src="img/shoe-big.jpg">
+            <img src="img/shoe-big.jpg" alt="product image">
         </div>
             <div class="thumbs">
                 <div class="product-1">
-                    <img src="img/shoe-3.jpg">
+                    <img src="img/shoe-1.jpg" alt="preview of product image">
                 </div>
                 <div class="product-2">
-                    <img src="img/shoe-1.jpg">
+                    <img src="img/shoe-2.jpg" alt="preview of product image">
                 </div>
                 <div class="product-3">
-                    <img src="img/shoe-2.jpg">
+                    <img src="img/shoe-3.jpg" alt="preview of product image">
                 </div>
             </div>
         </div>
-      </div>
+		<div class="details">
+			<h1>Gel-Fujitrabuco 5 G-Tx</h1>
+			<div class="logoprice">
+				<img src="img/brand-logo.jpg" alt="asics brand logo">
+				<p>kr 947.90</p>
+			</div>
+			<div class="save">
+				<p>kr. 1115.24</p>
+				<p>You save 15.00%</p>
+			</div>
+			<form>
+				<div class="inputs">
+					<div class="bottom-inpl">
+						<label for="">Size</label>
+						<select>
+							<option value="">EU 45 White</option>
+							<option selected value="">EU 45 Black</option>
+							<option value="">EU 46 Black</option>
+							<option value="">EU 46 White</option>
+						</select>
+					</div>
+					<div class="bottom-inpr">
+						<label for="">Amount</label>
+						<input type="number" value="1" min="1">
+					</div>
+				</div>
+				<input type="submit" value="buy now">
+			</form>
+		</div>
+	</div>
+</section>
+
+<!--tabs and text-->
+<div id="tab-container" class="tab-container">
+  <ul class='tabs'>
+    <li class='tab'><a href="#description">Description</a></li>
+    <li class='tab'><a href="#shipping">Shipping</a></li>
+    <li class='tab'><a href="#sizing">Sizing</a></li>
+  </ul>
+  <div class="line"></div>
+  <div class="textcontainer">
+  <div id="description">
+   <p class="textleft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, elit vitae porttitor facilisis, urna nunc sollicitudin nibh, eu sodales metus nisi a orci. Cras posuere, mauris sit amet congue commodo, ex mauris auctor massa, at tincidunt massa quam eget mauris. Suspendisse quis dignissim lacus. <br><br>Duis vitae ante non diam porttitor porttitor nec non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ac risus cursus lectus fermentum consectetur. In hac habitasse platea dictumst. Fusce tristique rutrum elit id luctus. Fusce malesuada justo quis mauris scelerisque finibus. Cras porta, tortor non interdum fringilla, lorem erat aliquam justo, ut pulvinar arcu diam in odio. Etiam at nulla commodo, bibendum dolor sed, molestie justo. Integer nulla metus, efficitur eu malesuada placerat, porttitor et sapien.
+    </p>
+    <p class="textright">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, elit vitae porttitor facilisis, urna nunc sollicitudin nibh, eu sodales metus nisi a orci. Cras posuere, mauris sit amet congue commodo, ex mauris auctor massa, at tincidunt massa quam eget mauris. Suspendisse quis dignissim lacus. <br><br> Duis vitae ante non diam porttitor porttitor nec non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ac risus cursus lectus fermentum consectetur. In hac habitasse platea dictumst. Fusce tristique rutrum elit id luctus. Fusce malesuada justo quis mauris scelerisque finibus. Cras porta, tortor non interdum fringilla, lorem erat aliquam justo, ut pulvinar arcu diam in odio. Etiam at nulla commodo, bibendum dolor sed, molestie justo. Integer nulla metus, efficitur eu malesuada placerat, porttitor et sapien.</p>
+  </div>
+  <div id="shipping">
+   <p class="textleft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, elit vitae porttitor facilisis, urna nunc sollicitudin nibh, eu sodales metus nisi a orci. Cras posuere, mauris sit amet congue commodo, ex mauris auctor massa, at tincidunt massa quam eget mauris. Suspendisse quis dignissim lacus. <br><br>Duis vitae ante non diam porttitor porttitor nec non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ac risus cursus lectus fermentum consectetur. In hac habitasse platea dictumst. Fusce tristique rutrum elit id luctus. Fusce malesuada justo quis mauris scelerisque finibus. Cras porta, tortor non interdum fringilla, lorem erat aliquam justo, ut pulvinar arcu diam in odio. Etiam at nulla commodo, bibendum dolor sed, molestie justo. Integer nulla metus, efficitur eu malesuada placerat, porttitor et sapien.
+    </p>
+    <p class="textright">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, elit vitae porttitor facilisis, urna nunc sollicitudin nibh, eu sodales metus nisi a orci. Cras posuere, mauris sit amet congue commodo, ex mauris auctor massa, at tincidunt massa quam eget mauris. Suspendisse quis dignissim lacus. <br><br>Duis vitae ante non diam porttitor porttitor nec non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ac risus cursus lectus fermentum consectetur. In hac habitasse platea dictumst. Fusce tristique rutrum elit id luctus. Fusce malesuada justo quis mauris scelerisque finibus. Cras porta, tortor non interdum fringilla, lorem erat aliquam justo, ut pulvinar arcu diam in odio. Etiam at nulla commodo, bibendum dolor sed, molestie justo. Integer nulla metus, efficitur eu malesuada placerat, porttitor et sapien.</p>
+  </div>
+  <div id="sizing">
+   <p class="textleft">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, elit vitae porttitor facilisis, urna nunc sollicitudin nibh, eu sodales metus nisi a orci. Cras posuere, mauris sit amet congue commodo, ex mauris auctor massa, at tincidunt massa quam eget mauris. Suspendisse quis dignissim lacus. <br><br>Duis vitae ante non diam porttitor porttitor nec non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ac risus cursus lectus fermentum consectetur. In hac habitasse platea dictumst. Fusce tristique rutrum elit id luctus. Fusce malesuada justo quis mauris scelerisque finibus. Cras porta, tortor non interdum fringilla, lorem erat aliquam justo, ut pulvinar arcu diam in odio. Etiam at nulla commodo, bibendum dolor sed, molestie justo. Integer nulla metus, efficitur eu malesuada placerat, porttitor et sapien.
+    </p>
+    <p class="textright">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed blandit, elit vitae porttitor facilisis, urna nunc sollicitudin nibh, eu sodales metus nisi a orci. Cras posuere, mauris sit amet congue commodo, ex mauris auctor massa, at tincidunt massa quam eget mauris. Suspendisse quis dignissim lacus. <br><br>Duis vitae ante non diam porttitor porttitor nec non quam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer ac risus cursus lectus fermentum consectetur. In hac habitasse platea dictumst. Fusce tristique rutrum elit id luctus. Fusce malesuada justo quis mauris scelerisque finibus. Cras porta, tortor non interdum fringilla, lorem erat aliquam justo, ut pulvinar arcu diam in odio. Etiam at nulla commodo, bibendum dolor sed, molestie justo. Integer nulla metus, efficitur eu malesuada placerat, porttitor et sapien.</p>
+  </div>
+  </div>
 </div>
-
-
 <!--newsletter signup + footer-->
 <div class="newsletter">
     <div class="signupcon">

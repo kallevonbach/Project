@@ -1,36 +1,324 @@
 .details-con{
     width: $containerw;
     margin: 30px auto;
+    overflow: auto;
+
+    @include small{
+        width: 100%;
+    }
 }
+//product images in the left side
+
 .gallery-con{
     width: 570px;
     height: 760px;
+    float: left;
+
+    @include small{
+        width: 100%;
+        text-align: center;
+        height: 100%;
+    }
 }
+
 .productimg{
     height: 570px;
     text-align: center;
     border: 1px solid #c7c7c7;
+    @include small{
+        height: 270px;
+        width: 270px;
+        margin: 0 auto;
+    }
+
+    img{
+        @include small{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
 }
+
 .thumbs{
     margin-top: 15px; 
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+    @include small{
+        justify-content: center;
+    }
 }
+
 .product-1{
-    margin: auto 0;
     width: 175px;
     height: 175px;
     border: 1px solid #c7c7c7;
     text-align: center;
     padding-top: 50px;
+    @include small{
+        width: 75px;
+        height: 75px;
+        padding-top: 20px;
+    }
+
+    img{
+        @include small{
+            max-width: 100%;
+            max-height: 100%;
+        }
+    }
 }
+
 .product-2{
     @extend .product-1;
     border: 1px solid $orange;
     padding-top: 0;
+    @include small{
+        margin: 0 10px;
+    }
 }
+
 .product-3{
     @extend .product-1;
     padding-top: 20px;
+    @include small{
+        width: 75px;
+        height: 75px;
+        padding-top: 10px;
+    }
+}
+
+//details in the top right side
+.details{
+    float: right;
+    width: 570px;
+    padding-top: 50px;
+
+    @include small{
+        width: 100%;
+        float: left;
+        padding: 20px 10px 0 10px;
+    }
+
+    h1{
+        font: bold 28px $primFont;
+        float: left;
+        color: $greyf;
+        width: 100%;
+        margin-bottom: 30px;
+
+        @include small{
+            font-size: 20px;
+            float: none;
+            margin-bottom: 10px;
+        }
+    }
+
+    input[type="submit"]{
+        @extend .buttonM;
+        float: right;
+        margin-top: 40px;
+        padding: 15px 65px;
+        font: bold 28px $secFont; 
+
+        @include small{
+            width: 100%;
+            float: none;
+        }
+        
+        &:hover{
+            color: $greyh;
+        }
+    }
+}
+
+.logoprice{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include small{
+        flex-direction: column;
+        align-items: flex-start;
+
+        img{
+            width: 20%;
+            margin-bottom: 15%;
+        }
+    }
+
+    p{
+        font: bold 40px $secFont;
+
+        @include small{
+            font-size: 25px;
+            margin: 0;
+        }
+    }
+}
+
+.save{
+    margin:30px 0 60px 0;
+    text-align: right;
+
+    @include small{
+        text-align: left;
+        margin: 5px 0 30px 0;
+    }
+
+    p{
+        color: $greyf;
+        font: italic 20px $secFont;
+        margin: 0;
+
+        @include small{
+            font-size: 15px;
+        }
+    }
+
+    p:first-of-type{
+        font: normal 24px $secFont;
+        text-decoration: line-through;
+
+        @include small{
+            font-size: 16px;
+        }
+    }
+}
+
+.inputs{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: $greyf;
+    input, select{
+        border: 1px solid $greyf;
+        height: 50px;
+    }
+    label{
+        font: bold 20px $secFont;
+        width: 100%;
+        margin-bottom: 10px;
+
+        @include small{
+            font: normal 18px $secFont;
+        }
+    }
+}
+
+.bottom-inpl{
+    select{
+        font: 20px $secFont;
+        padding-right: 265px;
+        padding-left: 10px;
+
+        @include small{
+            padding-right: 10px;
+            font-size: 16px;
+        }
+    }
+}
+
+.bottom-inpr{
+    @include small{
+        margin-right: 5%;
+    }
+
+    input{
+        width: 100px;
+        text-align: center;
+        float: right;
+
+        @include small{
+            width: 75px;
+        }
+    }
+
+    label{
+        text-align: right;
+    }
+}
+
+//bottom part with tabs and text
+.tabs{
+    width: $containerw;
+    margin: 0 auto;
+    @include small{
+        width: 100%;
+    }
+}
+.textcontainer{
+    @extend .tabs;
+    margin-top: 40px;
+}
+.line{
+    border-top: 1px solid #cccccc;
+    position: relative;
+    z-index: 1;
+    margin: -1px;
+}
+
+.tab { 
+    display: inline-block; 
+    background: #eee; 
+    border: solid 1px #cccccc; 
+    border-bottom: none;
+    height: 65px; 
+    text-align: center;
+    margin-right: 8px;
+    width: 190px;
+    padding-top: 25px;
+    border-radius: 11px 11px 0 0; 
+    -moz-border-radius: 11px 11px 0 0; 
+    -webkit-border-radius: 11px 11px 0 0;
+
+    @include small{
+        width: 90px;
+        height: 50px;
+    }
+
+    a{
+        font: normal 22px $secFont;
+        color: $greyf;
+        text-decoration: none;
+
+        @include small{
+            font-size: 16px;
+        }
+    }
+}
+
+.tab.active { 
+    background: #fff; 
+    position: relative; 
+    border-top: 11px solid $orange;
+    z-index: 5; 
+    padding-top: 15px;
+    box-sizing: border-box;
+    }
+
+.textleft{
+    width: 48%;
+    float: left;
+    p{
+        font: 16px $secFont;
+        color: $greyf;
+    }
+    @include small{
+        width: 100%;
+        float: none;
+        font-size: 14px;
+    }
+}
+
+.textright{
+    @extend .textleft;
+    float: right;
+}
+
+.textcontainer{
+    overflow: auto;
+    margin-bottom: 100px;
 }

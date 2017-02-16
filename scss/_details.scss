@@ -1,45 +1,40 @@
 .details-con{
     width: $containerw;
-    margin: 30px auto;
+    margin: 30px auto 20px auto;
     overflow: auto;
 
     @include small{
         width: 100%;
     }
 }
-//product images in the left side
 
+//product images in the left side
 .gallery-con{
     width: 570px;
-    height: 760px;
     float: left;
 
     @include small{
-        width: 100%;
-        text-align: center;
-        height: 100%;
+        width: 90%;
+        margin: 0 5%;
     }
 }
 
-.productimg{
+.mainimgcon{
     height: 570px;
     text-align: center;
     border: 1px solid #c7c7c7;
     @include small{
-        height: 270px;
-        width: 270px;
-        margin: 0 auto;
+        width: 100%;
     }
 
     img{
-        @include small{
             max-width: 100%;
             max-height: 100%;
-        }
+            @include vertical-align;
     }
 }
 
-.thumbs{
+#thumbs{
     margin-top: 15px; 
     display: flex;
     flex-direction: row;
@@ -50,43 +45,28 @@
     }
 }
 
-.product-1{
+.product-thumb{
     width: 175px;
     height: 175px;
     border: 1px solid #c7c7c7;
     text-align: center;
-    padding-top: 50px;
+    padding: 0 15px;
+
     @include small{
-        width: 75px;
-        height: 75px;
-        padding-top: 20px;
+        &:nth-child(2) {
+        margin: 0 10px;
+    }
     }
 
     img{
-        @include small{
             max-width: 100%;
             max-height: 100%;
-        }
+            @include vertical-align;
     }
 }
 
-.product-2{
-    @extend .product-1;
+.selected{
     border: 1px solid $orange;
-    padding-top: 0;
-    @include small{
-        margin: 0 10px;
-    }
-}
-
-.product-3{
-    @extend .product-1;
-    padding-top: 20px;
-    @include small{
-        width: 75px;
-        height: 75px;
-        padding-top: 10px;
-    }
 }
 
 //details in the top right side
@@ -98,21 +78,15 @@
     @include small{
         width: 100%;
         float: left;
-        padding: 20px 10px 0 10px;
+        padding: 20px 5% 0 5%;
     }
 
     h1{
-        font: bold 28px $primFont;
+        font: bold 2.8em $primFont;
         float: left;
         color: $greyf;
         width: 100%;
         margin-bottom: 30px;
-
-        @include small{
-            font-size: 20px;
-            float: none;
-            margin-bottom: 10px;
-        }
     }
 
     input[type="submit"]{
@@ -120,12 +94,8 @@
         float: right;
         margin-top: 40px;
         padding: 15px 65px;
-        font: bold 28px $secFont; 
+        font: bold 2.8em $secFont; 
 
-        @include small{
-            width: 100%;
-            float: none;
-        }
         
         &:hover{
             color: $greyh;
@@ -139,23 +109,9 @@
     justify-content: space-between;
     align-items: center;
 
-    @include small{
-        flex-direction: column;
-        align-items: flex-start;
-
-        img{
-            width: 20%;
-            margin-bottom: 15%;
-        }
-    }
 
     p{
-        font: bold 40px $secFont;
-
-        @include small{
-            font-size: 25px;
-            margin: 0;
-        }
+        font: bold 4em $secFont;
     }
 }
 
@@ -163,28 +119,16 @@
     margin:30px 0 60px 0;
     text-align: right;
 
-    @include small{
-        text-align: left;
-        margin: 5px 0 30px 0;
-    }
-
     p{
         color: $greyf;
-        font: italic 20px $secFont;
+        font: italic 2em $secFont;
         margin: 0;
 
-        @include small{
-            font-size: 15px;
-        }
     }
 
     p:first-of-type{
-        font: normal 24px $secFont;
+        font: normal 2.4em $secFont;
         text-decoration: line-through;
-
-        @include small{
-            font-size: 16px;
-        }
     }
 }
 
@@ -198,42 +142,28 @@
         height: 50px;
     }
     label{
-        font: bold 20px $secFont;
+        font: bold 2em $secFont;
         width: 100%;
         margin-bottom: 10px;
 
-        @include small{
-            font: normal 18px $secFont;
-        }
     }
 }
 
 .bottom-inpl{
     select{
-        font: 20px $secFont;
+        font: 2em $secFont;
         padding-right: 265px;
         padding-left: 10px;
-
-        @include small{
-            padding-right: 10px;
-            font-size: 16px;
-        }
     }
 }
 
 .bottom-inpr{
-    @include small{
-        margin-right: 5%;
-    }
 
     input{
+        font: bold 2em $secFont;
         width: 100px;
         text-align: center;
         float: right;
-
-        @include small{
-            width: 75px;
-        }
     }
 
     label{
@@ -247,17 +177,25 @@
     margin: 0 auto;
     @include small{
         width: 100%;
+        margin-top: 40px;
     }
 }
 .textcontainer{
     @extend .tabs;
     margin-top: 40px;
+    p{
+        font: 1.6em $secFont;
+        color: $greyf;
+    }
 }
 .line{
     border-top: 1px solid #cccccc;
     position: relative;
     z-index: 1;
-    margin: -1px;
+    margin-top: -1px;
+    @include small{
+        margin-top: -2px;
+    }
 }
 
 .tab { 
@@ -274,18 +212,15 @@
     -moz-border-radius: 11px 11px 0 0; 
     -webkit-border-radius: 11px 11px 0 0;
 
-    @include small{
-        width: 90px;
-        height: 50px;
-    }
-
     a{
-        font: normal 22px $secFont;
+        font: normal 2.2em $secFont;
         color: $greyf;
         text-decoration: none;
+    }
 
-        @include small{
-            font-size: 16px;
+    @include small{
+        &:first-child{
+            margin-left: 5%;
         }
     }
 }
@@ -302,14 +237,10 @@
 .textleft{
     width: 48%;
     float: left;
-    p{
-        font: 16px $secFont;
-        color: $greyf;
-    }
     @include small{
         width: 100%;
+        padding: 0 5%;
         float: none;
-        font-size: 14px;
     }
 }
 

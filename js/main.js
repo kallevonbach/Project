@@ -4,6 +4,7 @@ jQuery(document).ready(function(){
       'controls': false,
       'slideWrapper': '<div class="sy-slides-wrap" />'
   })
+
     $("#nav-mobile").html($(".nav-main").html());
     $("#nav-trigger span").click(function(){
         if ($("nav#nav-mobile ul").hasClass("expanded")) {
@@ -14,6 +15,17 @@ jQuery(document).ready(function(){
             $(this).addClass("open");
         }
     });
+
     $('#tab-container').easytabs();
+
+    jQuery('#thumbs .product-thumb').on('click', function (){
+        $('.selected').removeClass('selected');
+        $(this).addClass('selected');
+    });
+
+    jQuery('#thumbs img').on('click', function () {
+        var imageUrl = $(this).attr('src');
+        $('#mainImage').attr('src', imageUrl);
+    });
 
 });

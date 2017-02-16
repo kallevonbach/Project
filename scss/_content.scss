@@ -7,8 +7,8 @@
 	margin: 40px auto 0 auto;
 	
 	@include small{
-		width: 100%;
-		margin: 15px 0 0 0;
+		width: 95%;
+		margin: 15px auto 0 auto;
 		
 	}
 }
@@ -16,7 +16,7 @@
 	width: 370px;
 
 		h2{
-		font: 23px $primFont;
+		font: 2.3em $primFont;
 			a{
 			color: $orange;
 				&:hover{
@@ -26,7 +26,7 @@
 		}
 		p{
 		font-family: $secFont;
-		font-size: 14px;
+		font-size: 1.4em;
 		line-height: 20px;
 		color: $greyf;
 		}
@@ -36,12 +36,7 @@
 			max-width: 100%;
 		}
 		h2{
-			font-size: 12px;
 			margin: 4px 0;
-		}
-		p{
-			font-size: 10px;
-			line-height: 15px;
 		}
 	}
 }
@@ -51,16 +46,13 @@
 .popular-prod{
 	margin-top: 50px;
 	h2 {
-	font: 23px $primFont;
+	font: 2.3em $primFont;
 	color: $greyh;
 	text-transform: uppercase;
 	text-align: center;
 	border-bottom: 1px solid #ddd;
 	line-height: 0;
 	padding: 0;
-	@include small{
-		font-size: 15px;
-	}
 	}
 
 	h2 span {
@@ -84,65 +76,61 @@
 	margin: 50px auto;
 	width: 1200px;
 		@include small{
-			margin-bottom: 20px;
-			width: 100%;
+			width: 85%;
 		}
 }
-
 .product{
 	padding: 0 15px;
 	margin-bottom: 30px;
-		@include small{
-			padding: 0 7.5px;
-		}
+	@include small{
+		padding: 0 30px;
+		margin-bottom: 40px;
+	}
 }
 .prod-border{
 	border: 1px solid #eeeeee;
 }
 .prod-img{
-	padding: 5px 10px;
+	padding: 10px 5px 35px 10px;
 	i{
 	color:$orange;
 	}
-	img, i{
+	img{
 		max-width: 100%;
+	}
+	@include small{
+		padding: 15px 10px 35px 20px;
 	}
 }
 .desc-con{
 	margin: 0;
 	padding: 0 20px;
 	border-top: 1px solid #eeeeee;
-	@include small{
-		padding: 0 5px;
-	}
 }
 .prod-desc{
-	color: $greyh;
+	
+	&:hover{
+		text-decoration: underline;
+	}
+
+	a{
+		color: $greyh;
+	}
+
 	h3{
-		font-size: 18px;
+		font-size: 1.8em;
 		font: $primFont;
-		margin-bottom: 2px;
+		margin-bottom: 3px;
 	}
 	h4{
-		font-size: 14px;
+		font-size: 1.4em;
 		font: $primFont;
-		margin: 0;
+		margin: 2px 0;
 	}
+
 	p{
-		font-size: 12px;
+		font-size: 1.2em;
 		font: $secFont;
-	}
-	@include small{
-		h3{
-			font-size: 14px;
-		}
-		h4{
-			font-size: 12px;
-			margin-bottom: 2px;
-		}
-		p{
-			font-size: 10px;
-		}
 	}
 }
 .price-icons{
@@ -152,35 +140,25 @@
 		float: left;
 		color: $orange;
 		font: $secFont;
-		font-size: 14px;
+		font-size: 1.4em;
 	}
 	i{
 		margin-left: 8px;
 		float: right;
 		color: $greyh;
-		font-size: 16px;
+		font-size: 1.6em;
 		&:hover{
 			color: $orange;
-		}
-	}
-	@include small{
-		padding: 7.5px 0 25px 0;
-		p{
-			font-size: 12px;
-		}
-		i{
-			font-size: 14px;
 		}
 	}
 }
 .buy-grid{
       @extend .buttonM;
-      font-size: 14px;
+      font-size: 1.4em;
 	  width: 100%;
 	  padding: 10px 0;
-	@include small{
+	  @include small{
 		margin: 0px;
-		font-size: 12px;
 		padding: 7.5px 0;
 	}
 }

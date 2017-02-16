@@ -36,10 +36,20 @@ $secFont: Arial, Helvetica, sans-serif;
         -webkit-box-shadow:0 0 1px $orange;
     }
 }
+
+
 @mixin small {
   @media only screen and (max-width: 1000px) {
     @content;
   }
+}
+
+@mixin vertical-align($position: relative) {
+  position: $position;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 textarea:hover, 

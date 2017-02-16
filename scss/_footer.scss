@@ -13,13 +13,13 @@
     align-items: center;
     h2{
         color:white;
-        font-size: 22px;
+        font-size: 2.2em;
     }
     form{
         input[type="email"]{
             border: 0;
             padding: 10px 30px 10px 10px;
-            font-size: 14px;
+            font-size: 1.4em;
             font-family: $secFont;
             margin-right: 20px;
             text-transform: uppercase;
@@ -27,7 +27,7 @@
         input[type="submit"]{
             @extend .buttonM;
             background-color: #ff674f;
-            font-size: 14px;
+            font-size: 1.4em;
             padding: 10px 15px;
         }
     }
@@ -38,7 +38,6 @@
         width: 100%;
         height: 150px;
     h2{
-        font-size: 14px;
         margin-bottom: 20px; 
     }
     form{
@@ -67,7 +66,7 @@ footer{
     margin: 0 auto;
     h2{
         color: white;
-        font-size: 22px;
+        font-size: 2.2em;
     }
     li, a, p{
         color: $greyf;
@@ -76,17 +75,21 @@ footer{
     @include small {
         flex-direction: column;
         max-width: 100%;
+        text-align: center;
+        align-items: center;
+        font-size: 1.3em;
   }
 }
 
 .ourstores{
-    p{
-        margin-top: 20px; 
-        font-size: 14px;
-    }
-    ul{
+    ul, p{
         margin-top: 20px;
+        font-size: 1.4em;
     }
+    @include small{
+        margin-top: 20px;
+    }   
+
 }
 
 .social li{
@@ -94,6 +97,7 @@ display: inline-block;
     i{
         color: white;
         margin-right: 20px;
+        font
         &:hover{
             color: #ef4035;
         }
@@ -103,11 +107,13 @@ display: inline-block;
 .blogpost{
     max-width: 300px;
     li{
-    line-height: 20px;
     margin-top: 20px;
     }
+    p{
+        font-size: 1.4em;
+    }
     h4{
-        font-size: 14px;
+        font-size: 1.4em;
         color:white;
         text-transform: none;
         margin-bottom: 5px;
@@ -119,20 +125,35 @@ display: inline-block;
             color: white;
         }
     }
+    @include small{
+        margin-top: 20px;
+    }    
 }
 
 .support {
     ul{
     float: left;
-    margin: 15px 75px 0 0;
+    margin: 10px 75px 0 0;
+    
+    @include small{
+        float: none;
+        margin: 0;
+        &:nth-child(2){
+            margin-top: 20px;
+        }
+    }
     }
     a:hover{
         color: $orange;
     }
+    li{
+    font-size: 1.4em;
+    }  
 }
+
 .right{
     float: right;
-        @include small {
+    @include small{
         float: none;
-  }
+    }
 }

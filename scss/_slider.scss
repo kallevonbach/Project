@@ -5,31 +5,31 @@
     margin-top: -7px;
 
     h1{
-        font-size: 59px;
+        font-size: 5.9em;
         @include small{
-		    font-size: 16px;
+		    font-size: 3.5em;
             margin-bottom: 0px;
 		}
     }
     p{
-        font-size: 14px;
+        font-size: 1.4em;
         @include small{
-		    font-size: 8px;
             margin: 4px 0 0 0;
+            font-size: 1.8em;
 		}
     }
     img{
         max-height: 650px;
     }
+
     button{
         @extend .buttonM;
         padding: 8px 14px;
-        font-size: 14px;
+        font-size: 1.4em;
         margin-top: 10px;
         @include small{
 		    padding: 4px 7px;
-            font-size: 8px;
-            margin-top: 5px; 
+            margin-top: 20px; 
 		}
     }
 }
@@ -38,22 +38,22 @@
 	left: 0;
 	top: 50%;
 	bottom: 0;
-    transform: translate(0%, -60%);
-	max-width: 50%;
+    transform: translate(0%, -50%);
+	max-width: 60%;
 
     @include small {
-        transform: translate(0%, -80%);
-        max-width: 70%;
+        transform: translate(0%, -40%);
+        top: 40%;
+        max-width: 85%;
 		}
-
 
 	.sy-caption {
 		border-radius: 0;
 		left: 0;
-		padding: 20px 50px 20px 100px;
+		padding: 20px 100px 20px 150px;
 		background-color: rgba(black, 0.6);
         @include small{
-		    padding: 5px 5px 10px 10px;
+		    padding: 15px 40px 15px 25px;
 		}
 	}
 }
@@ -81,9 +81,9 @@
     @include small{
 		top: -35px;
         li{
-            width: 0.7em;
-            height: 0.7em;
+            margin-left: 15px;
+            width: 1.2em;
+            height: 1.2em;
         }
 	}
 }
-

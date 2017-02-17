@@ -8113,14 +8113,15 @@ header li {
       justify-content: center;
       align-content: center;
       padding-top: 25px;
-      border-bottom: 0px; } }
+      border-bottom: 0px;
+      font-size: 0.9em; } }
 
 @media only screen and (max-width: 1000px) {
   .logo {
     width: 100%; }
     .logo img {
-      width: 40%;
-      margin: 0 30%; } }
+      width: 60%;
+      margin: 0 20%; } }
 
 .con-shop li {
   padding-right: 20px; }
@@ -8176,15 +8177,16 @@ span {
       padding-bottom: 20px; }
     @media only screen and (max-width: 1000px) {
       .dropdown-content a {
+        font-size: 0.6em;
         color: #7e7f84;
         border-bottom: 1px solid #67686d; } }
   @media only screen and (max-width: 1000px) {
     .dropdown-content {
-      right: 8%;
+      right: 1%;
       background-color: white;
       padding: 0;
       top: 30%;
-      width: 33%;
+      width: 35%;
       border: 1px solid #67686d; } }
 
 .dropdown:hover .dropdown-content {
@@ -8218,7 +8220,7 @@ span {
     border-bottom: solid 1px #67686d; }
   #nav-mobile li {
     display: block;
-    font-size: 3em;
+    font-size: 1.5em;
     padding: 5px 0;
     margin: 0 5px;
     border-bottom: solid 1px #67686d; }
@@ -8235,7 +8237,7 @@ span {
       display: block; } }
 
 .mobile-wrap {
-  font-size: 3.4em;
+  font-size: 2em;
   padding: 25px;
   display: none; }
   .mobile-wrap a {
@@ -8274,14 +8276,14 @@ span {
     font-size: 5.9em; }
     @media only screen and (max-width: 1000px) {
       .slide-con h1 {
-        font-size: 3.5em;
+        font-size: 1.9em;
         margin-bottom: 0px; } }
   .slide-con p {
     font-size: 1.4em; }
     @media only screen and (max-width: 1000px) {
       .slide-con p {
-        margin: 4px 0 0 0;
-        font-size: 1.8em; } }
+        font-size: 1em;
+        margin: 4px 0 0 0; } }
   .slide-con img {
     max-height: 650px; }
   .slide-con button {
@@ -8291,7 +8293,7 @@ span {
     @media only screen and (max-width: 1000px) {
       .slide-con button {
         padding: 4px 7px;
-        margin-top: 20px; } }
+        font-size: 0.9em; } }
 
 .sy-caption-wrap {
   left: 0;
@@ -8301,9 +8303,8 @@ span {
   max-width: 60%; }
   @media only screen and (max-width: 1000px) {
     .sy-caption-wrap {
-      transform: translate(0%, -40%);
-      top: 40%;
-      max-width: 85%; } }
+      transform: translate(0%, -90%);
+      max-width: 70%; } }
   .sy-caption-wrap .sy-caption {
     border-radius: 0;
     left: 0;
@@ -8311,7 +8312,7 @@ span {
     background-color: rgba(0, 0, 0, 0.6); }
     @media only screen and (max-width: 1000px) {
       .sy-caption-wrap .sy-caption {
-        padding: 15px 40px 15px 25px; } }
+        padding: 3px 5px 10px 10px; } }
 
 .sy-pager {
   position: relative;
@@ -8331,9 +8332,8 @@ span {
     .sy-pager {
       top: -35px; }
       .sy-pager li {
-        margin-left: 15px;
-        width: 1.2em;
-        height: 1.2em; } }
+        width: 0.7em;
+        height: 0.7em; } }
 
 .p-cat-con {
   display: flex;
@@ -8365,7 +8365,11 @@ span {
       .p-cat img {
         max-width: 100%; }
       .p-cat h2 {
-        margin: 4px 0; } }
+        font-size: 1.2em;
+        margin: 4px 0; }
+      .p-cat p {
+        font-size: 1em;
+        line-height: 15px; } }
 
 .popular-prod {
   margin-top: 50px; }
@@ -8377,6 +8381,9 @@ span {
     border-bottom: 1px solid #ddd;
     line-height: 0;
     padding: 0; }
+    @media only screen and (max-width: 1000px) {
+      .popular-prod h2 {
+        font-size: 1.5em; } }
   .popular-prod h2 span {
     background: #fff;
     padding: 0 15px; }
@@ -8401,10 +8408,6 @@ span {
 .product {
   padding: 0 15px;
   margin-bottom: 30px; }
-  @media only screen and (max-width: 1000px) {
-    .product {
-      padding: 0 30px;
-      margin-bottom: 40px; } }
 
 .prod-border {
   border: 1px solid #eeeeee; }
@@ -8501,7 +8504,8 @@ span {
       width: 100%;
       height: 150px; }
       .signupcon h2 {
-        margin-bottom: 20px; }
+        margin-bottom: 20px;
+        font-size: 1.37em; }
       .signupcon form input[type="submit"] {
         padding: 2.5px 5px; }
       .signupcon form input[type="email"] {
@@ -8530,7 +8534,7 @@ footer {
       max-width: 100%;
       text-align: center;
       align-items: center;
-      font-size: 1.3em; } }
+      font-size: 1.1em; } }
 
 .ourstores ul, .ourstores p {
   margin-top: 20px;
@@ -8659,10 +8663,12 @@ footer {
   border: 1px solid #c7c7c7; }
   @media only screen and (max-width: 1000px) {
     .mainimgcon {
-      width: 100%; } }
+      height: 270px;
+      width: 270px;
+      margin: 0 auto; } }
   .mainimgcon img {
-    max-width: 100%;
-    max-height: 100%;
+    max-width: 99%;
+    max-height: 99%;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -8684,6 +8690,10 @@ footer {
   border: 1px solid #c7c7c7;
   text-align: center;
   padding: 0 15px; }
+  @media only screen and (max-width: 1000px) {
+    .product-thumb {
+      width: 75px;
+      height: 75px; } }
   @media only screen and (max-width: 1000px) {
     .product-thumb:nth-child(2) {
       margin: 0 10px; } }
@@ -8707,18 +8717,28 @@ footer {
     .details {
       width: 100%;
       float: left;
-      padding: 20px 5% 0 5%; } }
+      padding: 20px 10px 0 10px; } }
   .details h1 {
     font: bold 2.8em "PT Sans", sans-serif;
     float: left;
     color: #7e7f84;
     width: 100%;
     margin-bottom: 30px; }
+    @media only screen and (max-width: 1000px) {
+      .details h1 {
+        font-size: 2em;
+        float: none;
+        margin-bottom: 10px; } }
   .details input[type="submit"] {
     float: right;
     margin-top: 40px;
     padding: 15px 65px;
     font: bold 2.8em Arial, Helvetica, sans-serif; }
+    @media only screen and (max-width: 1000px) {
+      .details input[type="submit"] {
+        width: 80%;
+        float: none;
+        margin: 40px 10% 20px 10%; } }
     .details input[type="submit"]:hover {
       color: #67686d; }
 
@@ -8727,19 +8747,40 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center; }
+  @media only screen and (max-width: 1000px) {
+    .logoprice {
+      flex-direction: column;
+      align-items: flex-start; }
+      .logoprice img {
+        width: 25%;
+        margin-bottom: 5%; } }
   .logoprice p {
     font: bold 4em Arial, Helvetica, sans-serif; }
+    @media only screen and (max-width: 1000px) {
+      .logoprice p {
+        font-size: 2.8em;
+        margin: 0; } }
 
 .save {
   margin: 30px 0 60px 0;
   text-align: right; }
+  @media only screen and (max-width: 1000px) {
+    .save {
+      text-align: left;
+      margin: 5px 0 30px 0; } }
   .save p {
     color: #7e7f84;
     font: italic 2em Arial, Helvetica, sans-serif;
     margin: 0; }
+    @media only screen and (max-width: 1000px) {
+      .save p {
+        font-size: 1.5em; } }
   .save p:first-of-type {
     font: normal 2.4em Arial, Helvetica, sans-serif;
     text-decoration: line-through; }
+    @media only screen and (max-width: 1000px) {
+      .save p:first-of-type {
+        font-size: 1.6em; } }
 
 .inputs {
   display: flex;
@@ -8753,17 +8794,31 @@ footer {
     font: bold 2em Arial, Helvetica, sans-serif;
     width: 100%;
     margin-bottom: 10px; }
+    @media only screen and (max-width: 1000px) {
+      .inputs label {
+        font: normal 1.8em Arial, Helvetica, sans-serif; } }
 
 .bottom-inpl select {
   font: 2em Arial, Helvetica, sans-serif;
   padding-right: 265px;
   padding-left: 10px; }
+  @media only screen and (max-width: 1000px) {
+    .bottom-inpl select {
+      padding-right: 10px;
+      font-size: 1.6em; } }
+
+@media only screen and (max-width: 1000px) {
+  .bottom-inpr {
+    margin-right: 5%; } }
 
 .bottom-inpr input {
   font: bold 2em Arial, Helvetica, sans-serif;
   width: 100px;
   text-align: center;
   float: right; }
+  @media only screen and (max-width: 1000px) {
+    .bottom-inpr input {
+      width: 75px; } }
 
 .bottom-inpr label {
   text-align: right; }
@@ -8781,6 +8836,9 @@ footer {
   .textcontainer p {
     font: 1.6em Arial, Helvetica, sans-serif;
     color: #7e7f84; }
+    @media only screen and (max-width: 1000px) {
+      .textcontainer p {
+        font-size: 1.4em; } }
 
 .line {
   border-top: 1px solid #cccccc;
@@ -8808,6 +8866,13 @@ footer {
     font: normal 2.2em Arial, Helvetica, sans-serif;
     color: #7e7f84;
     text-decoration: none; }
+    @media only screen and (max-width: 1000px) {
+      .tab a {
+        font-size: 1.5em; } }
+  @media only screen and (max-width: 1000px) {
+    .tab {
+      width: 90px;
+      height: 50px; } }
   @media only screen and (max-width: 1000px) {
     .tab:first-child {
       margin-left: 5%; } }

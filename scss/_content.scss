@@ -36,7 +36,12 @@
 			max-width: 100%;
 		}
 		h2{
+			font-size: 1.2em;
 			margin: 4px 0;
+		}
+		p{
+			font-size: 1em;
+			line-height: 15px;
 		}
 	}
 }
@@ -53,6 +58,9 @@
 	border-bottom: 1px solid #ddd;
 	line-height: 0;
 	padding: 0;
+	@include small{
+		font-size: 1.5em;
+	}
 	}
 
 	h2 span {
@@ -82,10 +90,6 @@
 .product{
 	padding: 0 15px;
 	margin-bottom: 30px;
-	@include small{
-		padding: 0 30px;
-		margin-bottom: 40px;
-	}
 }
 .prod-border{
 	border: 1px solid #eeeeee;

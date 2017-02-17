@@ -7,15 +7,15 @@
     h1{
         font-size: 5.9em;
         @include small{
-		    font-size: 3.5em;
+		    font-size: 1.9em;
             margin-bottom: 0px;
 		}
     }
     p{
         font-size: 1.4em;
         @include small{
+            font-size: 1em;
             margin: 4px 0 0 0;
-            font-size: 1.8em;
 		}
     }
     img{
@@ -29,7 +29,7 @@
         margin-top: 10px;
         @include small{
 		    padding: 4px 7px;
-            margin-top: 20px; 
+            font-size: 0.9em;
 		}
     }
 }
@@ -42,9 +42,8 @@
 	max-width: 60%;
 
     @include small {
-        transform: translate(0%, -40%);
-        top: 40%;
-        max-width: 85%;
+        transform: translate(0%, -90%);
+        max-width: 70%;
 		}
 
 	.sy-caption {
@@ -53,7 +52,7 @@
 		padding: 20px 100px 20px 150px;
 		background-color: rgba(black, 0.6);
         @include small{
-		    padding: 15px 40px 15px 25px;
+		    padding: 3px 5px 10px 10px;
 		}
 	}
 }
@@ -81,9 +80,8 @@
     @include small{
 		top: -35px;
         li{
-            margin-left: 15px;
-            width: 1.2em;
-            height: 1.2em;
+            width: 0.7em;
+            height: 0.7em;
         }
 	}
 }

@@ -41,6 +41,7 @@ header li{
         align-content: center;
         padding-top: 25px;
         border-bottom: 0px;
+        font-size: 0.9em;
 	}
 }
 
@@ -49,8 +50,8 @@ header li{
         width: 100%;
 
         img{
-            width: 40%;
-            margin: 0 30%;
+            width: 60%;
+            margin: 0 20%;
         }
     }
 }
@@ -65,6 +66,7 @@ header li{
 
     @include small {
         padding-right: 5px;
+        
 
         &:last-child{
             display: none;
@@ -134,16 +136,17 @@ span{
             padding-bottom: 20px;
         }
         @include small{
+            font-size: 0.6em;
             color: $greyf;
             border-bottom: 1px solid $greyh;
         }
     }
     @include small{
-        right: 8%;
+        right: 1%;
         background-color: white;
         padding: 0;
         top: 30%;
-        width: 33%;
+        width: 35%;
         border: 1px solid $greyh;
 
     }
@@ -189,7 +192,7 @@ span{
 
     li{
         display: block;
-        font-size: 3em;
+        font-size: 1.5em;
         padding: 5px 0;
         margin: 0 5px;
         border-bottom: solid 1px $greyh; 
@@ -216,7 +219,7 @@ span{
 }
 
 .mobile-wrap{
-    font-size: 3.4em;
+    font-size: 2em;
     padding: 25px;
     display: none;
     
